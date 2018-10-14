@@ -1,0 +1,16 @@
+[core]
+	filemode = false
+	excludesfile = /Users/ethan/.gitignore
+	editor = vim
+[user]
+	name = Ethan Mick
+	email = ethan@ethanmick.com
+[push]
+	default = simple
+[filter "lfs"]
+	required = true
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	clean = git-lfs clean -- %f
+[commit]
+	gpgsign = true
