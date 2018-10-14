@@ -7,14 +7,6 @@ ZSH_THEME="ys"
 export EDITOR='vim'
 export TERM=xterm-256color
 
-alias gs='git status'
-alias e='$EDITOR'
-alias gitcount='git rev-list HEAD --count'
-alias remove_ds_store="find . -name '*.DS_Store' -type f -delete"
-alias remove_console_log="sed -i '' '/console.log(.*)/d' */**.ts"
-alias uuid="uuidgen"
-alias dc=docker-compose
-alias commit="cd ~/Documents/git-commit-dir && git commit &> /dev/null || true && cd -"
 
 jformat() {
     java -jar ~/.bin/google-java-format-1.6-all-deps.jar --replace **/*.java
@@ -30,6 +22,7 @@ setopt NO_BEEP
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+source .etc/zsh/aliases.zsh 
 
 # Customize to your needs...
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/{bin,sbin}:$PATH
