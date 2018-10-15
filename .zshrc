@@ -8,10 +8,6 @@ export EDITOR='vim'
 export TERM=xterm-256color
 
 
-jformat() {
-    java -jar ~/.bin/google-java-format-1.6-all-deps.jar --replace **/*.java
-}
-
 # Beeps are annoying
 setopt NO_BEEP
 
@@ -23,6 +19,10 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 source .etc/zsh/aliases.zsh 
+
+for f in $(find .etc/zsh/functions -type f); do
+	source $f
+done
 
 # Customize to your needs...
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/{bin,sbin}:$PATH
