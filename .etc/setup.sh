@@ -11,6 +11,7 @@ brew install go
 brew install google-java-format
 brew install jq
 brew install maven
+brew install pandoc
 brew install stow
 brew install tmux
 brew install watch
