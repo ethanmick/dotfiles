@@ -13,3 +13,4 @@ brew install jq
 brew install maven
 brew install stow
 brew install tmux
+brew install watch
