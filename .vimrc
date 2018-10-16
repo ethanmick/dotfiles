@@ -39,6 +39,7 @@ Plugin 'drewtempelmeyer/palenight.vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'junegunn/fzf.vim'
+Plugin 'leafgarland/typescript-vim'
 
 " all of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -60,3 +61,15 @@ endif
 
 " Make fzf easy to access
 nmap <C-p> :FZF<CR>
+
+" easier navigation
+"
+" this is hacky but some terminals send <BS> instead of <C-h> when ctrl-h is
+" pressed. since i don't really use <BS> in normal mode, this seems like a
+" reasonable thing for it to do.
+nmap <BS> <C-w>h
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
+nmap <C-q> <C-w>q
