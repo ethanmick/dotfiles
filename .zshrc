@@ -15,13 +15,13 @@ setopt NO_BEEP
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 
-plugins=(git)
+plugins=(git, golang)
 
 source $ZSH/oh-my-zsh.sh
-source .etc/zsh/aliases.zsh 
+source ~/.etc/zsh/aliases.zsh 
 
 for f in $(find .etc/zsh/functions -type f); do
-	source $f
+  source $f
 done
 
 # Customize to your needs...
@@ -64,3 +64,6 @@ fzf-open-file-or-dir() {
 zle -N fzf-open-file-or-dir
 
 bindkey '^W' fzf-open-file-or-dir
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
