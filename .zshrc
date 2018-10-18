@@ -25,7 +25,7 @@ for f in $(find .etc/zsh/functions -type f); do
 done
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/{bin,sbin}:$PATH
+export PATH=$HOME/.bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/{bin,sbin}:$PATH
 
 export GOPATH=$HOME/go
 export GOROOT=/usr/local/opt/go/libexec
