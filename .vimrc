@@ -7,6 +7,7 @@ syntax on
 
 set clipboard=unnamed
 set belloff=all
+set smartcase
 
 " Place all swap files in a central location to not pollute directories
 set directory^=$HOME/.vim/tmp//
