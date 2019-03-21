@@ -14,6 +14,7 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'junegunn/fzf.vim'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'sbdchd/neoformat'
 
 " all of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -56,6 +57,11 @@ let g:lightline = { 'colorscheme': 'palenight' }
 
 " Make Go Vim Awesome!
 let g:go_fmt_command = "goimports"
+let g:go_metalinter_autosave = 1
+
+" Format JS/TS/JSX/TSX
+autocmd BufWritePre *.js,*.ts,*.jsx,*.tsx,*.scss Neoformat
+
 
 " Use Theme
 set background=dark

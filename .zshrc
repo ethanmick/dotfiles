@@ -36,6 +36,8 @@ export PATH="$PATH:$HOME/.rvm/bin"
 source ~/.pyenv/bin/activate
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Load NVM
+source $(brew --prefix nvm)/nvm.sh
 
 # open a file for editing by choosing with fzf
 fzf-open-file-or-dir() {
@@ -58,3 +60,9 @@ bindkey '^W' fzf-open-file-or-dir
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+
+# tabtab source for electron-forge package
+# uninstall by removing these lines or running `tabtab uninstall electron-forge`
+[[ -f /usr/local/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /usr/local/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.zsh
+# added by travis gem
+[ -f /Users/ethan/.travis/travis.sh ] && source /Users/ethan/.travis/travis.sh
