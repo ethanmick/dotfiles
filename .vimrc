@@ -14,7 +14,11 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'junegunn/fzf.vim'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'Quramy/vim-js-pretty-template'
+Plugin 'jason0x43/vim-js-indent'
+Plugin 'Quramy/tsuquyomi'
 Plugin 'sbdchd/neoformat'
+Plugin 'cespare/vim-toml'
 
 " all of your Plugins must be added before the following line
 call vundle#end()            " required
