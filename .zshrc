@@ -1,5 +1,6 @@
 # Setup oh-my-zsh
 # Path to your oh-my-zsh configuration.
+ZSH_DISABLE_COMPFIX=true
 export ZSH=$HOME/.oh-my-zsh
 export UPDATE_ZSH_DAYS=90
 ZSH_THEME="ys"
@@ -18,7 +19,7 @@ done
 setopt NO_BEEP
 export EDITOR='vim'
 export TERM=xterm-256color
-export PATH=$HOME/.bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/{bin,sbin}:$PATH
+export PATH=$HOME/.bin:$HOME/.local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/{bin,sbin}:$PATH
 export GOPATH=$HOME/go
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
