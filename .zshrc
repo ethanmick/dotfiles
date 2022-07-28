@@ -19,12 +19,12 @@ done
 setopt NO_BEEP
 export EDITOR='vim'
 export TERM=xterm-256color
-export PATH=$HOME/.bin:$HOME/.local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/{bin,sbin}:$PATH
 export GOPATH=$HOME/go
 export GOROOT=/usr/local/opt/go/libexec
-export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin
+export PATH=$HOME/.bin:$HOME/.local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/{bin,sbin}:$GOPATH/bin:$GOROOT/bin:$PATH
 export JAVA_TOOL_OPTIONS="-Djava.awt.headless=true"
+export HOMEBREW_NO_INSTALL_CLEANUP=1
+export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1
 
 # Setup environment for current job
 for f in $(find "$HOME/.etc/work" -type f); do
