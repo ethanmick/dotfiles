@@ -35,9 +35,6 @@ dist/
 # Flycheck
 flycheck_*.el
 
-# server auth directory
-/server/
-
 # projectiles files
 .projectile
 
@@ -66,12 +63,6 @@ flycheck_*.el
 *.tar
 *.zip
 
-# Logs and databases #
-######################
-*.log
-*.sql
-*.sqlite
-
 # OS generated files #
 ######################
 .DS_Store
@@ -89,9 +80,6 @@ Thumbs.db
 
 # Python #
 env
-
-# VSCode
-.vscode
 
 # Idea
 .idea/
