@@ -22,6 +22,7 @@ export TERM=xterm-256color
 export GOPATH=$HOME/go
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$HOME/.bin:$HOME/.local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/{bin,sbin}:$GOPATH/bin:$GOROOT/bin:$PATH
+export PATH=/usr/local/opt/node@18/bin:$PATH
 export JAVA_TOOL_OPTIONS="-Djava.awt.headless=true"
 export HOMEBREW_NO_INSTALL_CLEANUP=1
 export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1
@@ -39,9 +40,6 @@ source ~/.pyenv/bin/activate
 
 # Fuzzy Search
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# Load NVM
-source $(brew --prefix nvm)/nvm.sh
 
 # open a file for editing by choosing with fzf
 fzf-open-file-or-dir() {
