@@ -20,12 +20,13 @@ setopt NO_BEEP
 export EDITOR='vim'
 export TERM=xterm-256color
 export GOPATH=$HOME/go
-export GOROOT=/usr/local/opt/go/libexec
+export GOROOT=/opt/homebrew/opt/go/libexec
 export PATH=$HOME/.bin:$HOME/.local/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/{bin,sbin}:$GOPATH/bin:$GOROOT/bin:$PATH
-export PATH=/usr/local/opt/node@18/bin:$PATH
+export PATH=/opt/homebrew/opt/node@18/bin:$PATH
 export JAVA_TOOL_OPTIONS="-Djava.awt.headless=true"
 export HOMEBREW_NO_INSTALL_CLEANUP=1
 export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1
+
 
 # Setup environment for current job
 for f in $(find "$HOME/.etc/work" -type f); do
@@ -34,9 +35,6 @@ done
 
 # SSH Key
 /usr/bin/ssh-add -K ~/.ssh/id_rsa > /dev/null 2>&1
-
-# Activate Python virtual environment
-source ~/.pyenv/bin/activate
 
 # Fuzzy Search
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
