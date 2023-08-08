@@ -84,3 +84,5 @@ env
 # Idea
 .idea/
 .etc/work
+
+go/pkg
